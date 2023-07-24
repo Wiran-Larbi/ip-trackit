@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ip Tracking</title>
+</head>
+
+<body>
+    <form id="ipForm">
+        <label for="ip">Enter your ip : </label>
+        <input id="ip" type="text" placeholder="10.10.10.10">
+    </form>
+
+    <h1>User Information</h1>
+    <h3>IP:</h3>
+    <span id="ip-place"></span>
+    <h3>Country:</h3>
+    <span id="country-place"></span>
+    <h3>City:</h3>
+    <span id="city-place"></span>
+
+    <span style="color: red;" id="error"></span>
+</body>
+
+
+<script>
+    const ipPlace = document.getElementById('ip-place');
+    const countryPlace = document.getElementById('country-place');
+    const cityPlace = document.getElementById('city-place');
+    const inputIp = document.getElementById('ip');
+    const ipForm = document.getElementById('ipForm');
+    const error = document.getElementById('error');
+    ipForm.addEventListener('submit', (e) => {
+        e.preventDefault();
+        const ip = inputIp.value ? inputIp.value : '?fields=61439';
+
+        fetch(`http://ip-api.com/json/${ip}`)
+            .then(res => res.json())
+            .then(res => {
+                if (res.status === "fail") throw new Error(res.message);
+                if (!inputIp.value)
+                    inputIp.value = res.query;
+                ipPlace.textContent = res.query;
+                countryPlace.textContent = res.country;
+                cityPlace.textContent = res.city;
+            })
+            .catch(err => {
+                error.textContent = err.message;
+                setTimeout(() => {
+                    error.textContent = '';
+                    inputIp.value = '';
+                }, 2000);
+            })
+    })
+
+
+
+
+
+
+</script>
+
+</html>
