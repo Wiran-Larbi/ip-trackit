@@ -1,0 +1,12 @@
+@import "tailwindcss/base";
+
+@import "tailwindcss/components";
+
+@import "tailwindcss/utilities";
+
+
+.bg-image{
+    background: url('/images/backimage.png') no-repeat center center /cover;
+    background-attachment: fixed;
+    height: 300px;
+}
