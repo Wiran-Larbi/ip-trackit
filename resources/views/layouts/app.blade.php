@@ -29,7 +29,7 @@
     <nav class="bg-white border-gray-200 dark:bg-gray-900 shadow-2xl">
       <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
         <a href="https://flowbite.com/" class="flex items-center">
-            <!-- <img src="logo" class="h-8 mr-3" alt="Flowbite Logo" /> -->
+            <!-- <img src="logo" class="h-8 mr-3" alt="Logo" /> -->
             <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Ip tracking</span>
         </a>
         <div class="flex items-center md:order-2">
