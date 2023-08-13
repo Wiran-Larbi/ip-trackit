@@ -124,7 +124,8 @@ export function IconLocalization() {
 export function IconSpeed() {
     return (
         <>
-            <img src={SpeedIcon}></img>
+            <img src=
+            {SpeedIcon}></img>
         </>
     )
 }

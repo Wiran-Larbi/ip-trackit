@@ -4,7 +4,6 @@ import LogoLarge from '../../../images/logo-1.png';
 
 export function Logo() {
 
-
     return (
         <>
             <div className="mb-4 flex flex-shrink-0 items-center">
