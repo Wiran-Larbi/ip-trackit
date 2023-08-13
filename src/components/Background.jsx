@@ -1,4 +1,4 @@
-import backgroundDesktop from '../gif/background6.gif'
+import backgroundDesktop from '../gif/background7.gif'
 
 export function BackgroundDesktop() {
 
