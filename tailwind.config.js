@@ -7,7 +7,7 @@ export default {
   theme: {
     extend: {
       colors: {
-        trademark: '#2C74B3'
+        trademark: '#00447f'
       },
       fontFamily: {
         'sf': ['Sf Pro Display', 'sans-serif']
