@@ -24,8 +24,8 @@ function App() {
 
         {address &&
           <>
-            <Modal address={address} />
-            <MapModal address={address} />
+          {/* //   <Modal address={address} />
+          //   <MapModal address={address} /> */}
           </>
 
         }
