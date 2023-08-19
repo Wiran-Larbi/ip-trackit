@@ -48,7 +48,7 @@ const checkDomain =
 
     return <>
         <article className="p-8">
-          <h1 className="text-2xl lg:text-3xl text-center text-white font-medium mb-8 font-sf">IP Address Tracker</h1>
+          <h1 className="text-2xl lg:text-3xl text-center text-white font-medium mt-10 mb-10 font-sf">IP Address Tracker</h1>
           <form 
           onSubmit={handleSubmit}
           className="flex justify-center max-w-xl mx-auto "
