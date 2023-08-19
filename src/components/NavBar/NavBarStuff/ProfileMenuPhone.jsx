@@ -16,7 +16,7 @@ export function ProfileMenuPhone() {
             <div className="absolute flex top-4 right-0">
                 <button
                     type="button"
-                    className="relative rounded-full p-1 text-trademark hover:text-cyan-500 focus:outline-none "
+                    className="relative rounded-full p-1 text-trademark hover:text-cyan-500  focus:outline-none "
                 >
                     <span className="absolute -inset-1.5" />
                     <span className="sr-only">View notifications</span>
@@ -24,7 +24,7 @@ export function ProfileMenuPhone() {
                 </button>
                 <Menu as="div" className="relative ml-3">
                     <div>
-                        <Menu.Button className="relative flex rounded-full bg-cyan-800 text-sm focus:outline-none focus:ring-2 focus:ring-cyan-600 focus:ring-offset-1 focus:ring-offset-cyan-700">
+                        <Menu.Button className="relative flex rounded-full bg-cyan-100 text-sm focus:outline-none focus:ring-2 focus:ring-cyan-600 focus:ring-offset-1 focus:ring-offset-cyan-700">
                             <span className="absolute -inset-1.5" />
                             <span className="sr-only">Open user menu</span>
                             <img

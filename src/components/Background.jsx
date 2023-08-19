@@ -1,4 +1,4 @@
-import backgroundDesktop from '../images/Desktop-star-background.png'
+import backgroundDesktop from '../gif/background7.gif'
 
 export function BackgroundDesktop() {
 
@@ -7,7 +7,7 @@ export function BackgroundDesktop() {
         <div className="w-full absolute -z-10 top-2">
             <img src={backgroundDesktop}
                 alt="background image"
-                className="min-w-full h-80 object-cover" />
+                className="min-w-full h-auto object-cover" />
         </div>
     </>
 }

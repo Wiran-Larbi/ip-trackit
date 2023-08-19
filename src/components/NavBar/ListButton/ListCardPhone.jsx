@@ -10,7 +10,7 @@ export function ListCardPhone({ item }) {
             <a
                 key={item.name}
                 href={item.href}
-                className="-m-2 flex items-center rounded-lg ml-4 py-2 transition duration-150 ease-in-out hover:bg-gray-100 "
+                className="-m-2 flex items-center rounded-lg ml-4 py-2 ease-in-out hover:bg-blue-100 transition duration-300 "
             >
                 <div className="flex h-10 w-10 shrink-0 items-center justify-center text-white sm:h-12 sm:w-12">
                     <item.icon aria-hidden="true" />

@@ -22,7 +22,7 @@ function classNames(...classes) {
 
 export default function NavBar({ signedIn }) {
     return (
-        <Disclosure as="nav" className="bg-gray-50 shadow-sm border border-b-slate-200 ">
+        <Disclosure as="nav" className="bg-gray-50 shadow-2xl border border-b-slate-200 ">
             {({ open }) => (
                 <>
                     <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
@@ -39,7 +39,7 @@ export default function NavBar({ signedIn }) {
                                     )}
                                 </Disclosure.Button>
                             </div>
-                            <div className="flex flex-1 gap-20 items-stretch sm:items-center justify-center sm:justify-start">
+                            <div className="flex flex-1 gap-28 items-stretch sm:items-center justify-center sm:justify-start">
                                 {/* //flex flex-1 items-stretch justify-center sm:items-stretch sm:justify-start */}
                                 <Logo />
                                 {
@@ -49,7 +49,7 @@ export default function NavBar({ signedIn }) {
 
                                 }
 
-                                <div className="hidden sm:ml-6 sm:block">
+                                <div className="hidden mt-2 sm:ml-6 sm:block">
                                     <div className="flex space-x-4">
                                         {navigation.map((item) => (
                                             item.name === "Solutions"
@@ -59,7 +59,7 @@ export default function NavBar({ signedIn }) {
                                                 <a
                                                     key={item.name}
                                                     href={item.href}
-                                                    className='text-opacity-90 text-trademark px-3 py-2 text-base font-medium hover:text-opacity-100 hover:text-blue-400 focus:outline-none'
+                                                    className='text-opacity-90 text-trademark px-3 py-2 text-base font-medium hover:text-opacity-100 hover:text-blue-400 transition duration-300 focus:outline-none'
                                                     aria-current={item.current ? 'page' : undefined}
                                                 >
                                                     {item.name}
@@ -100,7 +100,7 @@ export default function NavBar({ signedIn }) {
                                         key={item.name}
                                         as="a"
                                         href={item.href}
-                                        className='text-trademark  hover:text-cyan-500 block px-3 py-2 text-lg font-medium'
+                                        className='text-trademark  hover:text-cyan-500 transition duration-300 block px-3 py-2 text-lg font-medium'
                                         aria-current={item.current ? 'page' : undefined}
                                     >
                                         {item.name}
