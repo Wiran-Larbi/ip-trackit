@@ -6,6 +6,7 @@ import { BackgroundDesktop } from './components/Background'
 import Navbar from './components/NavBar/NavBar';
 import { Modal } from './components/Modal'
 import { MapModal } from './components/MapModal'
+import Footer from './components/Footer/Footer';
 
 function App() {
   const [address, setAddress] = useState("");
@@ -24,11 +25,11 @@ function App() {
 
         {address &&
           <>
-            <Modal address={address} />
-            <MapModal address={address} />
+            {/* <Modal address={address} /> */}
+            {/* <MapModal address={address} /> */}
           </>
-
         }
+        <Footer />
 
       </section>
     </>
