@@ -1,5 +1,8 @@
 import { useState, useEffect } from 'react'
 import arrow from '../images/icon-arrow.svg'
+// import dotenv from 'dotenv';
+// dotenv.config({path: '../../config.env'});
+const API_KEY = import.meta.env.VITE_API_KEY;
 
 export function IpAddressForm(props) {
     const [ipAddress, setIpAddress] = useState("");
@@ -13,7 +16,7 @@ const checkDomain =
   useEffect(() => {
     try {
       const getInitialData = async () => {
-        const res = await fetch(`https://geo.ipify.org/api/v2/country,city?apiKey=at_6Quodzm307DcxQRM23P4ZYdVuLF6g&ipAddress=${
+        const res = await fetch(`https://geo.ipify.org/api/v2/country,city?apiKey=${API_KEY}&ipAddress=${
           checkIpAddress.test(ipAddress) ? `${ipAddress}` : checkDomain.test(ipAddress) ? `domain=${ipAddress}` : ""
         }`);
 
@@ -32,7 +35,7 @@ const checkDomain =
 
 
     const getEnteredAddress = async () => {
-        const res = await fetch(`https://geo.ipify.org/api/v2/country,city?apiKey=at_6Quodzm307DcxQRM23P4ZYdVuLF6g&ipAddress=${
+        const res = await fetch(`https://geo.ipify.org/api/v2/country,city?apiKey=${API_KEY}&ipAddress=${
           checkIpAddress.test(ipAddress) ? `${ipAddress}` : checkDomain.test(ipAddress) ? `domain=${ipAddress}` : ""
         }`);
         const data = await res.json();
